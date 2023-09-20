@@ -1,0 +1,364 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+a{
+    text-decoration: none;
+}
+.content{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(pictures/pexels-jhong-pascua-3018845.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.navbar{
+    width: 100%;
+    height: 150px;
+    position: relative;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.logo{
+    position:absolute;
+    top: 20px;
+    left: 50px;
+}
+.logo h1{
+    color: #fff;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.logo h1 span{
+    color: #ffde00;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.nav1{
+    position: absolute;
+    top: 50px;
+}
+.nav1 ul{
+    list-style: none;
+}
+.nav1 ul li{
+    display: inline-block;
+    margin: 0 30px;
+    position: relative;
+
+}
+.nav1 ul li::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #ffde00;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    transition: 0.25s
+}
+.nav1 ul li:hover::after{
+    width: 100%;
+}
+.nav1 ul li :hover{
+    color: #ffde00;
+
+}
+.nav1 ul li a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.searcharea{
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    width: 1200px;
+    height: 50px;
+    display: flex;
+}
+.searcharea:hover{
+    transition: .5s;
+    transform: scale(1.05);
+}
+.searcharea input{
+    width: 1000px;
+    height: 50px;
+    border: #ffde00 2px solid;
+    border-right: 0;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    background: transparent;
+    outline: 0;
+    padding: 10px 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.searcharea input::placeholder{
+    font-weight: bold;
+}
+.searcharea button{
+    width: 200px;
+    border: #ffde00 2px solid;
+    height: 50px;
+    border-left: 0;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    background: #ffffff;
+    position: relative;
+    z-index: 1;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+}
+.searcharea button span{
+    position: absolute;
+    width: 0;
+    height: 100%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #ffde00;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.25s;
+    overflow: hidden;
+}
+.searcharea button:hover span{
+    width: 100%;
+}
+.socials{
+    position: absolute;
+    top:40px;
+    right: 50px;
+}
+.socials i{
+    font-size: 25px;
+    padding: 0 10px;
+    color: #fff;
+}
+.socials .fa-facebook:hover{
+    color: blue;
+    transition: .25s;
+    transform: scale(1.05)
+}
+.socials .fa-instagram:hover{
+    color: rgb(255, 0, 191);
+    transition: .25s;
+    transform: scale(1.05)
+}
+.socials .fa-twitter:hover{
+    color: rgb(0, 106, 255);
+    transition: .25s;
+    transform: scale(1.05)
+}
+.home{
+    width: 100%;
+    height: 80vh;
+    position: relative;
+}
+.home .text{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+.home .text h1{
+    color: #fff;
+    font-size: 100px;
+    text-transform: uppercase;
+}
+.home .text h1 span{
+    color: #ffde00;
+}
+.home .text h3{
+    font-size: 50px;
+    color:#fff;
+    width: 600px;
+}
+.home .text h5{
+    color: white;
+    width: 640px;
+}
+.home .text button{
+    width: 160px;
+    padding: 10px 20px;
+    margin-top: 50px;
+    background:transparent;
+    outline: 0;
+    border: 2px #ffde00 solid;
+    color: #ffde00;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 25px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.home .text button:hover{
+    color: #000;
+    font-size: 15px;
+    font-weight: bold;
+    transform: scale(1.05);
+    border: 0;
+    
+    transition: .5s;
+}
+.home .text button span{
+    background: #ffde00;
+    width: 0;
+    height: 100%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: .5s;
+}
+.home .text button:hover span{width: 100%;
+}
+.productarea{
+    width: 100%;
+    height: 120vh;
+    background-color: #000000;
+}
+.productarea .text1{
+    text-align: center;
+    color: #fff;
+    font-size: 80px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.productarea .text1 span{
+    color: #ffde00;
+}
+.products{
+    width: 100%;
+    height:90vh;
+}
+.products .items{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 10px;
+    flex-wrap: wrap;
+   
+}
+.products .items .item1{
+    width: 200px;
+    height: 300px;
+    margin-top: 2px;
+    
+    background-color: #fff;
+    margin-left: 1px;
+    margin-right: 1px;
+    border-radius: 20px;
+}
+.products .items .item1:hover{
+    box-shadow: 2px 2px 30px #f3f3f3;
+    transition: all ease-in-out .5s ;
+    transform: scale(1.01);
+}
+.products .items .item1 img{
+    content: url(pictures/pexels-steven-john-pascua-4416763.jpg);
+    width: 200px;
+    cursor: pointer;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    height: 220px;
+}
+.products .items .item1 h5{
+    font-weight: normal;
+    color: rgb(0, 140, 255);
+    width: 80%;
+    padding-left: 10px;
+}
+.products .items .item1 h2{
+    color: #ffa600;
+    font-weight: normal;
+    font-size: 20px;
+    padding-left: 10px;
+}
+.products .items .item1:hover{
+    background-color: #ffde00;
+    color: black;
+}
+.products .items .item1:hover h2{
+    color: #000;
+    transition: .25s;
+}
+.products .items .item1:hover h5{
+    color: #000;
+    transition: .25s;
+}
+.footer{
+    width: 100%;
+    height: 50vh;
+    background-color: #08031f;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+}
+.footer h1{
+    font-size: 25px;
+    padding-bottom: 15px;
+}
+.footer .txt1{
+    margin-left: 250px;
+}
+.footer .txt3{
+    margin-right: 250px;
+}
+.footer .txt2 .inputarea{
+    width: 350px ;
+    height: 35px;
+    display: flex;
+}
+.footer .txt2 input{
+    width: 250px;
+    height: 35px;
+    outline: 0;
+    padding: 10px;
+    border: 0;
+}
+.footer .txt2 button{
+    width: 75px;
+    height: 35px;
+    outline: 0;
+    border: 0;
+    background-color: #ffde00;
+}
+.footer .txt2 .inputarea:hover{
+    transition: .5s;
+    transform: scale(1.05);
+}
+.footer .txt1 p a{
+    font-size: 18px;
+    color: #fff;
+    font-weight: normal;
+}
+.footer .txt1 p a:hover{
+    color: #ffde00;
+}
+.footer .txt3 i{
+    color: white;
+    font-size: 1.8rem;
+    padding: 0 10px;
+}
+.footer .txt3 i:hover{
+    color: #ffde00;
+    transform: scale(1.1);
+    transition: .5s;
+}
